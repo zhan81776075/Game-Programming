@@ -13,10 +13,27 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="源文件\Snake">
+      <UniqueIdentifier>{b0072010-2ff3-4f5b-8bb5-c36331a3c5ff}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\Snake">
+      <UniqueIdentifier>{8e43b571-31ec-4d07-a060-c9bda221da29}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Guess_my_number.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="Snake\snake_main.cpp">
+      <Filter>源文件\Snake</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Snake\startinterface.h">
+      <Filter>头文件\Snake</Filter>
+    </ClInclude>
+    <ClInclude Include="Snake\point.h">
+      <Filter>头文件\Snake</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
