@@ -75,6 +75,7 @@
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_MBCS;%(PreprocessorDefinitions);_CRT_SECURE_NO_WARNINGS</PreprocessorDefinitions>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -115,15 +116,26 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Guess_my_number.cpp">
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
     </ClCompile>
+    <ClCompile Include="Snake\controller.cpp" />
+    <ClCompile Include="Snake\main.cpp" />
+    <ClCompile Include="Snake\map.cpp" />
+    <ClCompile Include="Snake\point.cpp" />
     <ClCompile Include="Snake\snake_main.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
     </ClCompile>
+    <ClCompile Include="Snake\startinterface.cpp" />
+    <ClCompile Include="Snake\tools.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Snake\controller.h" />
+    <ClInclude Include="Snake\food.h" />
+    <ClInclude Include="Snake\map.h" />
     <ClInclude Include="Snake\point.h" />
+    <ClInclude Include="Snake\snake.h" />
     <ClInclude Include="Snake\startinterface.h" />
+    <ClInclude Include="Snake\tools.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

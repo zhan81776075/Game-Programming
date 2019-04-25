@@ -27,12 +27,45 @@
     <ClCompile Include="Snake\snake_main.cpp">
       <Filter>源文件\Snake</Filter>
     </ClCompile>
+    <ClCompile Include="Snake\controller.cpp">
+      <Filter>源文件\Snake</Filter>
+    </ClCompile>
+    <ClCompile Include="Snake\tools.cpp">
+      <Filter>源文件\Snake</Filter>
+    </ClCompile>
+    <ClCompile Include="Snake\main.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Snake\point.cpp">
+      <Filter>源文件\Snake</Filter>
+    </ClCompile>
+    <ClCompile Include="Snake\startinterface.cpp">
+      <Filter>源文件\Snake</Filter>
+    </ClCompile>
+    <ClCompile Include="Snake\map.cpp">
+      <Filter>源文件\Snake</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Snake\startinterface.h">
       <Filter>头文件\Snake</Filter>
     </ClInclude>
     <ClInclude Include="Snake\point.h">
+      <Filter>头文件\Snake</Filter>
+    </ClInclude>
+    <ClInclude Include="Snake\controller.h">
+      <Filter>头文件\Snake</Filter>
+    </ClInclude>
+    <ClInclude Include="Snake\tools.h">
+      <Filter>头文件\Snake</Filter>
+    </ClInclude>
+    <ClInclude Include="Snake\map.h">
+      <Filter>头文件\Snake</Filter>
+    </ClInclude>
+    <ClInclude Include="Snake\snake.h">
+      <Filter>头文件\Snake</Filter>
+    </ClInclude>
+    <ClInclude Include="Snake\food.h">
       <Filter>头文件\Snake</Filter>
     </ClInclude>
   </ItemGroup>
