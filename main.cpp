@@ -3,7 +3,11 @@
 #include<iostream>
 int main()
 {
-	std::cout << "¡ö";
-	return 0;
+	SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 13);
+	std::cout << "hhhh";
+	SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 14);
+	std::cout << "hhhh";
+	SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 15);
+	std::cout << "hhhh";
 }
 

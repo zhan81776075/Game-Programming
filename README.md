@@ -15,8 +15,12 @@ C++游戏编程练习
 
 ## Github小游戏
 
-2.Snake 贪吃蛇小游戏 <https://github.com/silence1772/GreedySnake>
+1.Snake 贪吃蛇小游戏 <https://github.com/silence1772/GreedySnake>
 
 
 
 项目仅为个人学习使用
+
+
+
+**PS**:main.cpp为编程练习过程中用来测试函数的，可以忽略

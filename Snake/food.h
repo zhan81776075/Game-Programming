@@ -1,34 +1,27 @@
-#ifndef SNAKE_H
-#define SNAKE_H
+#ifndef FOOD_H
+#define FOOD_H
 
-#include <deque>
-#include "point.h"
-#include "food.h"
-
-class Food;
-class Snake
+#include "snake.h"
+class Snake;
+class Food
 {
 public:
-	enum Direction { UP, DOWN, LEFT, RIGHT };
-
-	Snake() {
-		snake.emplace_back(14, 8);
-		snake.emplace_back(15, 8);
-		snake.emplace_back(16, 8);
-		direction = Direction::DOWN;
-	}
-	void InitSnake();
-	void Move();
-	void NormalMove();
-	bool OverEdge();
-	bool HitItself();
-	bool ChangeDirection();
-	bool GetFood(const Food&);
-	bool GetBigFood(Food&);
+	Food() : cnt(0), flash_flag(false), big_flag(false), x(0), y(0), big_x(0), big_y(0), progress_bar(0) {}
+	void DrawFood(Snake&);
+	void DrawBigFood(Snake&);
+	int GetCnt();
+	void FlashBigFood();
+	bool GetBigFlag();
+	int GetProgressBar();
 private:
-	std::deque<Point> snake;
-	Direction direction;
-	friend class Food;//将Food类置为友元，以便访问其私有元素
+	int cnt;
+	bool flash_flag;//闪烁标记
+	bool big_flag;//是否有限时食物标记
+	int x, y;
+	int big_x, big_y;
+	int progress_bar;//限时食物进度条
+	friend class Snake;
 };
-#endif // SNAKE_H
+#endif // FOOD_H
+
 

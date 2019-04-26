@@ -1,7 +1,8 @@
-#include"startinterface.h"
+#include "controller.h"
 
 int main()
 {
-	StartInterface a;
+	Controller c;
+	c.Game();
 	return 0;
 }
