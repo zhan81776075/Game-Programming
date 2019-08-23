@@ -17,7 +17,7 @@ void Controller::Start()//开始界面
 	start->Action();//开始动画
 	delete start;//释放内存空间
 
-				 /*设置关标位置，并输出提示语，等待任意键输入结束*/
+	/*设置关标位置，并输出提示语，等待任意键输入结束*/
 	SetCursorPosition(13, 26);
 	std::cout << "Press any key to start... ";
 	SetCursorPosition(13, 27);
