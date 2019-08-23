@@ -17,6 +17,8 @@ C++游戏编程练习
 
 1.Snake 贪吃蛇小游戏 <https://github.com/silence1772/GreedySnake>
 
+2.Plane2D 简单的飞机射击游戏
+
 
 
 项目仅为个人学习使用
